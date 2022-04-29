@@ -182,8 +182,7 @@
         height: 60px;
         padding: 18px 18px;
         background: #005FA3;
-        font-family: 'Lato';
-        font-style: normal;
+        font-family: 'Lato', sans-serif;
         font-weight: 400;
         font-size: 18px;
         line-height: 25px;
@@ -191,12 +190,53 @@
         color: #FFFFFF;
         text-decoration: none;
     }
-    &__content-button {}
+    &__content-button {
+        margin-bottom: 70px;
+    }
     .slider {
-        &__dots-w {}
-        &__dots {}
-        &__arrows-w {}
-        &__arrow-left {}
-        &__arrow-right {}
+        max-width: inherit;
+        width: inherit;
+        display: flex;
+        justify-content: space-between;
+        &__dots-w {
+            max-width: 160px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        &__dots {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #FFFFFF;
+            opacity: 0.4;
+            cursor: pointer;
+        }
+        &__arrows-w {
+            display: flex;
+        }
+        &__arrow-left {
+            position: relative;
+            display: block;
+            width: 60px;
+            height: 60px;
+            background-color: #FFFFFF;
+            opacity: 0.1;
+            &::before {
+                content: '';
+                position: absolute;
+                width: 16px;
+                height: 30px;
+                background: rgb(255, 255, 255);
+                margin-top: 20px;
+            }
+        }
+        &__arrow-right {
+            position: relative;
+            width: 60px;
+            height: 60px;
+            background: #FFFFFF;
+            opacity: 0.2;
+        }
     }
 }
