@@ -1,0 +1,202 @@
+@import 'reset.scss';
+@import 'fonts.scss';
+@import 'mixin.scss';
+// @include mq(xxl) {}
+// @include mq(xl) {}
+// @include mq(lg) {}
+// @include mq(md) {}
+// @include mq(sm) {}
+.wrapper-content {}
+
+.header-w {
+    width: 100%;
+}
+
+.header {
+    width: 100%;
+    padding-top: 22px;
+    &__inner {
+        max-width: 1116px;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__logo-w {
+        max-width: 260px;
+        margin-top: 11px;
+    }
+    .logolink {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    }
+    &__logo {}
+    &__logo-name {
+        margin-left: 30px;
+    }
+    .logo-name {
+        font-family: 'Merriweather';
+        font-weight: 900;
+        font-size: 36px;
+        line-height: 50px;
+        color: #005FA3;
+    }
+    &__items {
+        max-width: 671px;
+        width: 100%;
+    }
+    &__contact {
+        max-width: inherit;
+        width: inherit;
+        display: flex;
+    }
+    .contact {
+        font-family: 'Lato';
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 17px;
+        color: #000000;
+        text-decoration: none;
+        &:last-child {
+            font-style: normal;
+        }
+        &:not(:first-child) {
+            margin-left: 41px;
+        }
+        &:hover {
+            color: #005FA3;
+        }
+    }
+    &__contact-phone {
+        position: relative;
+        display: block;
+        padding-left: 30px;
+        &::before {
+            content: '';
+            position: absolute;
+            background: url(../images/icon-phone.png) no-repeat;
+            width: 10px;
+            height: 18px;
+            left: 0;
+            top: 0;
+        }
+    }
+    &_contact-schedule {
+        position: relative;
+        display: block;
+        padding-left: 30px;
+        &::before {
+            content: '';
+            position: absolute;
+            background: url(../images/icon-time.png) no-repeat;
+            width: 17px;
+            height: 17px;
+            left: 0;
+            top: 0;
+        }
+    }
+    &__contact-mail {
+        position: relative;
+        display: block;
+        padding-left: 30px;
+        &::before {
+            content: '';
+            position: absolute;
+            background: url(../images/icon-mail.png) no-repeat;
+            width: 23px;
+            height: 17px;
+            left: 0;
+            top: 0;
+        }
+    }
+    &__contact-addres {
+        position: relative;
+        display: block;
+        padding-left: 33px;
+        &::before {
+            content: '';
+            position: absolute;
+            background: url(../images/icon-placeholder.png) no-repeat;
+            width: 17px;
+            height: 17px;
+            left: 0;
+            top: 0;
+        }
+    }
+    &__main {
+        max-width: inherit;
+        width: inherit;
+        margin-top: 22px;
+    }
+    .nav {
+        &__list {
+            display: flex;
+        }
+        &__items {
+            list-style: none;
+            &:not(:first-child) {
+                margin-left: 65px;
+            }
+        }
+        &__main-link {
+            font-family: 'Lato', sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 17px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #222222;
+            text-decoration: none;
+            &:hover {
+                color: #005FA3;
+            }
+        }
+    }
+    &__content {
+        position: relative;
+        margin-top: 31px;
+        width: 100%;
+        min-height: 670px;
+        background: url(../images/header__img.png) no-repeat;
+        background-size: cover;
+        padding-top: 170px;
+    }
+    &__content-inner {
+        max-width: 1116px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    &__content-title {
+        font-family: 'Merriweather';
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 66px;
+        color: #FFFFFF;
+        margin-bottom: 80px;
+    }
+    .button {
+        display: inline-block;
+        width: 270px;
+        height: 60px;
+        padding: 18px 18px;
+        background: #005FA3;
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        text-align: center;
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+    &__content-button {}
+    .slider {
+        &__dots-w {}
+        &__dots {}
+        &__arrows-w {}
+        &__arrow-left {}
+        &__arrow-right {}
+    }
+}
