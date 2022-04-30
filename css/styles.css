@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Aleo&family=Merriweather:wght@900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -295,5 +296,102 @@
   height: 60px;
   background: #FFFFFF;
   opacity: 0.2;
+}
+
+.services {
+  width: 100%;
+  background: #EBEBEB;
+  padding: 140px 0px;
+}
+
+.services__inner {
+  max-width: 1116px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.services__title {
+  margin-bottom: 102px;
+}
+
+.services .title__top {
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 33px;
+  color: #BDBDBD;
+  margin-bottom: 40px;
+}
+
+.services .title__bottom {
+  font-family: 'Merriweather';
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 69px;
+  color: #333333;
+}
+
+.services__items-w {
+  max-width: inherit;
+  width: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.services__items-left {
+  max-width: 350px;
+  width: 100%;
+}
+
+.services__item {
+  position: relative;
+  background-image: url(../images/services-img.png);
+  z-index: 2;
+  max-width: 350px;
+  width: 100%;
+  min-height: 360px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.services .items-top {
+  margin-bottom: 30px;
+}
+
+.services__item--color {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 95, 163, 0.65)), to(rgba(0, 95, 163, 0.65))), url(../images/services-img.png) no-repeat;
+  background: linear-gradient(0deg, rgba(0, 95, 163, 0.65), rgba(0, 95, 163, 0.65)), url(../images/services-img.png) no-repeat;
+}
+
+.services__items-center {
+  max-width: 350px;
+  width: 100%;
+}
+
+.services__items-rigth {
+  max-width: 350px;
+  width: 100%;
+}
+
+.services__item-link-w {
+  width: inherit;
+  margin: 0px 0px 45px 45px;
+}
+
+.services__item-link {
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 30px;
+  color: #FFFFFF;
+  text-decoration: none;
 }
 /*# sourceMappingURL=styles.css.map */
