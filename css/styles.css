@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -314,23 +315,6 @@
   margin-bottom: 102px;
 }
 
-.services .title__top {
-  font-family: 'Lato', sans-serif;
-  font-weight: 900;
-  font-size: 24px;
-  line-height: 33px;
-  color: #BDBDBD;
-  margin-bottom: 40px;
-}
-
-.services .title__bottom {
-  font-family: 'Merriweather';
-  font-weight: 900;
-  font-size: 48px;
-  line-height: 69px;
-  color: #333333;
-}
-
 .services__items-w {
   max-width: inherit;
   width: inherit;
@@ -393,5 +377,148 @@
   line-height: 30px;
   color: #FFFFFF;
   text-decoration: none;
+}
+
+.title__top {
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 33px;
+  color: #BDBDBD;
+  margin-bottom: 40px;
+}
+
+.title__bottom {
+  font-family: 'Merriweather';
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 69px;
+  color: #333333;
+}
+
+.company {
+  width: 100%;
+  background-color: white;
+  padding: 140px 0px;
+}
+
+.company__inner {
+  max-width: 1110px;
+  width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.company__items-left {
+  max-width: 440px;
+  width: 100%;
+}
+
+.company__title {
+  margin-bottom: 60px;
+}
+
+.company__name {
+  font-family: 'Merriweather';
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 69px;
+  color: #005FA3;
+}
+
+.company__text {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  color: #000000;
+}
+
+.company__items-right {
+  max-width: 540px;
+  width: 100%;
+  margin-top: 24px;
+}
+
+.company__case-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.company__case {
+  max-width: 255px;
+  width: 100%;
+  min-height: 255px;
+  background-color: #EBEBEB;
+}
+
+.company__case-inner {
+  margin: 30px 0px 0px 40px;
+}
+
+.company__case-summ {
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  font-size: 55px;
+  line-height: 66px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 30px;
+}
+
+.company__case-subtitle {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  margin-bottom: 47px;
+}
+
+.company__case-link {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #005FA3;
+}
+
+.company__case-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.company__case--color-blue {
+  background: #005FA3;
+}
+
+.company__case-summ--color-white {
+  color: #FFFFFF;
+}
+
+.company__case-subtitle--color-white {
+  color: #FFFFFF;
+}
+
+.company__case-link--color-white {
+  color: #FFFFFF;
 }
 /*# sourceMappingURL=styles.css.map */
