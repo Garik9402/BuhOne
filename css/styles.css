@@ -783,6 +783,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 35px;
 }
 
 .form__input-w {
@@ -799,6 +800,8 @@
 }
 
 .form .input__name {
+  max-width: inherit;
+  width: inherit;
   background: transparent;
   border: none;
   outline: none;
@@ -851,6 +854,8 @@
 }
 
 .form .input__family {
+  max-width: inherit;
+  width: inherit;
   background: transparent;
   border: none;
   outline: none;
@@ -888,6 +893,62 @@
 .form .input__family::placeholder {
   font-family: 'Lato', sans-serif;
   font-style: normal;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 29px;
+  color: #BDBDBD;
+}
+
+.form__textarea-w {
+  max-width: 540px;
+  width: 100%;
+}
+
+.form-textarea-name {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 29px;
+  color: #FFFFFF;
+  margin-bottom: 15px;
+}
+
+.form__textarea {
+  max-width: 540px;
+  width: 100%;
+  height: 136px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #726F6D;
+  outline: none;
+}
+
+.form__textarea::-webkit-input-placeholder {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 29px;
+  color: #BDBDBD;
+}
+
+.form__textarea:-ms-input-placeholder {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 29px;
+  color: #BDBDBD;
+}
+
+.form__textarea::-ms-input-placeholder {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 29px;
+  color: #BDBDBD;
+}
+
+.form__textarea::placeholder {
+  font-family: 'Lato', sans-serif;
   font-weight: 300;
   font-size: 21px;
   line-height: 29px;
