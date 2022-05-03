@@ -248,21 +248,24 @@
                         <a href="mailto:order@bu-one.ru" class="contact-us__mail  contact-us__phoneemil-style">order@bu-one.ru</a>
                     </div>
                 </div>
-                <div class="contact-us__form">
-                    <form action="#" name="form">
-                        <div class="form__inner">
-                            <div>
-                                <p class="form__input-title"><label for="input-name">имя</label></p>
-                                <input id="input-name" type="text" placeholder="Иван">
+                <div class="form contact-us__form">
+                    <form action="#" name="form" method="post">
+                        <div class="form__inputs">
+                            <div class="form__input-w">
+                                <p class="form__input-name"><label for="input-name">Имя</label></p>
+                                <input class="input__name" id="input-name" type="text" placeholder="Иван">
                             </div>
-                            <div>
-                                <p><label for="input-family">фамилия</label></p>
-                                <input id="input-family" type="text" placeholder="Иванов">
+                            <div class="form__input-w">
+                                <p class="form__input-family"><label for="input-family">Фамилия</label></p>
+                                <input class=" input input__family" id="input-family" type="text" placeholder="Иванов">
                             </div>
+                        </div>
+                        <div class="form__textarea-w">
+                            <p class="form-textarea-name"><label for="form__textarea">Сообщение</label></p>
+                            <textarea class="form__textarea" name="text" id="textarea" cols="30" rows="10" placeholder="Ваше сообщение"></textarea>
                         </div>
                     </form>
                 </div>
-
             </div>
         </section>
 

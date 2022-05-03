@@ -769,11 +769,128 @@
   background-color: none;
 }
 
-.contact-us form {
+.form {
+  max-width: 540px;
+  width: 100%;
+}
+
+.form__inputs {
   max-width: inherit;
   width: inherit;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.form__input-w {
+  max-width: 255px;
+  width: 100%;
+}
+
+.form__input-name {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+
+.form .input__name {
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 15px 0px;
+  border-bottom: 1px solid #726F6D;
+}
+
+.form .input__name::-webkit-input-placeholder {
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 29px;
+  color: #BDBDBD;
+}
+
+.form .input__name:-ms-input-placeholder {
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 29px;
+  color: #BDBDBD;
+}
+
+.form .input__name::-ms-input-placeholder {
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 29px;
+  color: #BDBDBD;
+}
+
+.form .input__name::placeholder {
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 29px;
+  color: #BDBDBD;
+}
+
+.form__input-family {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+
+.form .input__family {
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 15px 0px;
+  border-bottom: 1px solid #726F6D;
+}
+
+.form .input__family::-webkit-input-placeholder {
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 29px;
+  color: #BDBDBD;
+}
+
+.form .input__family:-ms-input-placeholder {
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 29px;
+  color: #BDBDBD;
+}
+
+.form .input__family::-ms-input-placeholder {
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 29px;
+  color: #BDBDBD;
+}
+
+.form .input__family::placeholder {
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 29px;
+  color: #BDBDBD;
 }
 /*# sourceMappingURL=styles.css.map */
