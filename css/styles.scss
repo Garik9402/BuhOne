@@ -195,6 +195,21 @@
                 }
             }
             
+            .button {
+                display: inline-block;
+                width: 270px;
+                height: 60px;
+                padding: 16px 0px;
+                background: #005FA3;
+                font-family: 'Lato', sans-serif;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 25px;
+                text-align: center;
+                color: #FFFFFF;
+                text-decoration: none;
+            }
+            
             .slider {
                 max-width: inherit;
                 width: inherit;
@@ -622,6 +637,7 @@
             .form {
                 max-width: 540px;
                 width: 100%;
+                margin-top: 20px;
                 &__inputs {
                     max-width: inherit;
                     width: inherit;
@@ -648,6 +664,8 @@
                     outline: none;
                     padding: 15px 0px;
                     border-bottom: 1px solid #726F6D;
+                    color: #FFFFFF;
+                    font-size: 21px;
                     &::placeholder {
                         font-family: 'Lato', sans-serif;
                         font-style: normal;
@@ -672,6 +690,8 @@
                     outline: none;
                     padding: 15px 0px;
                     border-bottom: 1px solid #726F6D;
+                    color: #FFFFFF;
+                    font-size: 21px;
                     &::placeholder {
                         font-family: 'Lato', sans-serif;
                         font-style: normal;
@@ -688,7 +708,7 @@
                 &-textarea-name {
                     font-family: 'Lato', sans-serif;
                     font-weight: 300;
-                    font-size: 21px;
+                    font-size: 16px;
                     line-height: 29px;
                     color: #FFFFFF;
                     margin-bottom: 15px;
@@ -701,6 +721,9 @@
                     border: none;
                     border-bottom: 1px solid #726F6D;
                     outline: none;
+                    color: #FFFFFF;
+                    font-size: 21px;
+                    margin-bottom: 50px;
                     &::placeholder {
                         font-family: 'Lato', sans-serif;
                         font-weight: 300;
@@ -709,4 +732,29 @@
                         color: #BDBDBD;
                     }
                 }
+                &__button-w {
+                    width: 100%;
+                    display: flex;
+                    justify-content: end;
+                }
+                &__button {
+                    border: none;
+                    cursor: pointer;
+                }
+            }
+            
+            .footer-w {}
+            
+            .footer {
+                width: 100%;
+                &__inner {
+                    max-width: 1110px;
+                    width: 100%;
+                    height: 120px;
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+                &__item {}
             }
