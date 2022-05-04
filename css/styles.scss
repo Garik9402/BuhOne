@@ -163,10 +163,26 @@
                     background-size: cover;
                     padding-top: 170px;
                 }
+                &__content-continer {
+                    width: 589px;
+                    height: 300px;
+                    overflow: hidden;
+                }
+                &__content-items {
+                    width: 2356px;
+                    height: 280px;
+                    display: flex;
+                    position: relative;
+                    transition: all 0.5s ease;
+                }
                 &__content-inner {
                     max-width: 1116px;
                     width: 100%;
                     margin: 0 auto;
+                }
+                &__slider-elements {
+                    width: 589px;
+                    height: 257px;
                 }
                 &__content-title {
                     font-family: 'Merriweather';
@@ -242,23 +258,33 @@
                     display: block;
                     width: 60px;
                     height: 60px;
-                    background-color: #FFFFFF;
-                    opacity: 0.1;
+                    background: rgb(255, 255, 255);
+                    background: linear-gradient(149deg, rgba(255, 255, 255, 0.2) 100%, rgba(75, 65, 65, 1) 100%);
                     &::before {
                         content: '';
                         position: absolute;
                         width: 16px;
                         height: 30px;
-                        background: rgb(255, 255, 255);
-                        margin-top: 20px;
+                        background: url(../images/arrow-back.png) no-repeat;
+                        margin-top: 21px;
+                        left: 20px;
                     }
                 }
                 .arrow-right {
                     position: relative;
                     width: 60px;
                     height: 60px;
-                    background: #FFFFFF;
-                    opacity: 0.2;
+                    background: rgb(255, 255, 255);
+                    background: linear-gradient(149deg, rgba(255, 255, 255, 0.5) 100%, rgba(75, 65, 65, 1) 100%);
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        width: 16px;
+                        height: 30px;
+                        background: url(../images/arrow-forward.png) no-repeat;
+                        margin-top: 21px;
+                        right: 21px;
+                    }
                 }
             }
             
@@ -756,5 +782,4 @@
                     justify-content: space-between;
                     align-items: center;
                 }
-                &__item {}
             }
