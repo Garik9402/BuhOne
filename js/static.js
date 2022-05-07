@@ -4,19 +4,20 @@
   let arrowrightNode = document.querySelector('.arrow-right--js')
   const dotsNode = document.querySelectorAll(".dots--js")
   let contentNode = document.querySelectorAll('.header__slider-elements--js')
+  let index = 0;
   arrowleftNode.addEventListener('click', function() {
-      size += 589
-      if (size > 1767) {
-          size = 0
+      size += -589
+      if (size < 0) {
+          size = 1767
       }
 
       sliderItemsNode.style.left = -size + 'px';
 
   })
   arrowrightNode.addEventListener('click', function() {
-      size += -589
-      if (size < 0) {
-          size = 1767
+      size += 589
+      if (size > 1767) {
+          size = 0
       }
 
       sliderItemsNode.style.left = -size + 'px';
@@ -32,3 +33,9 @@
           this.classList.add('dots--background-white')
       })
   }
+  arrowrightNode.addEventListener('click', function() {
+      if (index > dotsNode.length - 1) {
+          dotsNode.classList.remove('dots--background-white')
+      }
+
+  })
