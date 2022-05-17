@@ -243,7 +243,7 @@
 
 .header-content__inner .slick-prev:hover,
 .header-content__inner .slick-next:hover {
-  opacity: 0.6;
+  opacity: 0.4;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -720,6 +720,106 @@
   margin: 0 auto;
 }
 
+.reviews .reviews-slider {
+  position: relative;
+  /* Лента слайдов */
+  /* Слайд */
+  /* Слайд активный (показывается) */
+  /* Слайд основной */
+  /* Слайд по центру */
+  /* Клонированный слайд */
+  /* Стрелка */
+  /* Стрелка влево */
+  /* Стрелка не активная */
+  /* Точки (булиты) */
+  /* Активная точка */
+  /* Элемент точки */
+}
+
+.reviews .reviews-slider .slick-slider {
+  /* Слайдер запущен */
+  /* Слайдер с точками */
+}
+
+.reviews .reviews-slider .slick-list {
+  overflow: hidden;
+}
+
+.reviews .reviews-slider .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.reviews .reviews-slider .slick-arrow {
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+  cursor: pointer;
+}
+
+.reviews .reviews-slider .slick-prev,
+.reviews .reviews-slider .slick-next {
+  font-size: 0;
+  width: 60px;
+  height: 60px;
+  right: 60px;
+  border: none;
+}
+
+.reviews .reviews-slider .slick-prev:hover,
+.reviews .reviews-slider .slick-next:hover {
+  background-color: #005FA3;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.reviews .reviews-slider .slick-prev {
+  background: rgba(0, 95, 163, 0.2);
+  background-image: url(../images/arrow-back.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.reviews .reviews-slider .slick-next {
+  background: rgba(0, 95, 163, 0.2);
+  background-image: url(../images/arrow-forward.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  right: 0;
+}
+
+.reviews .reviews-slider .slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 50px;
+}
+
+.reviews .reviews-slider .slick-dots li {
+  list-style: none;
+}
+
+.reviews .reviews-slider .slick-dots li:not(:first-child) {
+  margin-left: 40px;
+}
+
+.reviews .reviews-slider li.slick-active button {
+  background-color: #005FA3;
+  opacity: 1;
+}
+
+.reviews .reviews-slider li button {
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  background: #005FA3;
+  opacity: 0.4;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+}
+
 .reviews__title {
   margin-bottom: 80px;
 }
@@ -771,7 +871,7 @@
   color: #4F4F4F;
 }
 
-.reviews .contact-us {
+.contact-us {
   width: 100%;
   min-height: 623px;
   background: url(../images/form__img.png) no-repeat;
@@ -779,7 +879,7 @@
   padding: 122px 0px 140px;
 }
 
-.reviews .contact-us__inner {
+.contact-us__inner {
   max-width: 1110px;
   width: 100%;
   margin: 0 auto;
@@ -791,12 +891,12 @@
           justify-content: space-between;
 }
 
-.reviews .contact-us__contacts {
+.contact-us__contacts {
   max-width: 459px;
   width: 100%;
 }
 
-.reviews .contact-us__contacts-title {
+.contact-us__contacts-title {
   font-family: 'Merriweather';
   font-weight: 900;
   font-size: 48px;
@@ -805,15 +905,15 @@
   margin-bottom: 60px;
 }
 
-.reviews .contact-us .text--color-white {
+.contact-us .text--color-white {
   color: #FFFFFF;
 }
 
-.reviews .contact-us__contacts-text {
+.contact-us__contacts-text {
   margin-bottom: 80px;
 }
 
-.reviews .contact-us__phone-emil {
+.contact-us__phone-emil {
   max-width: inherit;
   width: inherit;
   display: -webkit-box;
@@ -824,7 +924,7 @@
           justify-content: space-between;
 }
 
-.reviews .contact-us__phoneemil-style {
+.contact-us__phoneemil-style {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   font-size: 21px;
@@ -833,13 +933,13 @@
   text-decoration: none;
 }
 
-.reviews .contact-us__phone {
+.contact-us__phone {
   position: relative;
   display: block;
   padding-left: 35px;
 }
 
-.reviews .contact-us__phone::before {
+.contact-us__phone::before {
   content: '';
   position: absolute;
   background: url(../images/icon-phone2.png) no-repeat;
@@ -849,13 +949,13 @@
   left: 0;
 }
 
-.reviews .contact-us__mail {
+.contact-us__mail {
   position: relative;
   display: block;
   padding-left: 56px;
 }
 
-.reviews .contact-us__mail::before {
+.contact-us__mail::before {
   content: '';
   position: absolute;
   background: url(../images/icon-mail2.png) no-repeat;
@@ -865,24 +965,24 @@
   left: 0;
 }
 
-.reviews .contact-us__form {
+.contact-us__form {
   max-width: 540px;
   width: 100%;
 }
 
-.reviews .contact-us .input-name {
+.contact-us .input-name {
   width: 255px;
   outline: none;
   background-color: none;
 }
 
-.reviews .form {
+.form {
   max-width: 540px;
   width: 100%;
   margin-top: 20px;
 }
 
-.reviews .form__inputs {
+.form__inputs {
   max-width: inherit;
   width: inherit;
   display: -webkit-box;
@@ -894,12 +994,12 @@
   margin-bottom: 35px;
 }
 
-.reviews .form__input-w {
+.form__input-w {
   max-width: 255px;
   width: 100%;
 }
 
-.reviews .form__input-name {
+.form__input-name {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -907,7 +1007,7 @@
   color: #FFFFFF;
 }
 
-.reviews .form .input__name {
+.form .input__name {
   max-width: inherit;
   width: inherit;
   background: transparent;
@@ -919,7 +1019,7 @@
   font-size: 21px;
 }
 
-.reviews .form .input__name::-webkit-input-placeholder {
+.form .input__name::-webkit-input-placeholder {
   font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -928,7 +1028,7 @@
   color: #BDBDBD;
 }
 
-.reviews .form .input__name:-ms-input-placeholder {
+.form .input__name:-ms-input-placeholder {
   font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -937,7 +1037,7 @@
   color: #BDBDBD;
 }
 
-.reviews .form .input__name::-ms-input-placeholder {
+.form .input__name::-ms-input-placeholder {
   font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -946,7 +1046,7 @@
   color: #BDBDBD;
 }
 
-.reviews .form .input__name::placeholder {
+.form .input__name::placeholder {
   font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -955,7 +1055,7 @@
   color: #BDBDBD;
 }
 
-.reviews .form__input-family {
+.form__input-family {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -963,7 +1063,7 @@
   color: #FFFFFF;
 }
 
-.reviews .form .input__family {
+.form .input__family {
   max-width: inherit;
   width: inherit;
   background: transparent;
@@ -975,7 +1075,7 @@
   font-size: 21px;
 }
 
-.reviews .form .input__family::-webkit-input-placeholder {
+.form .input__family::-webkit-input-placeholder {
   font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -984,7 +1084,7 @@
   color: #BDBDBD;
 }
 
-.reviews .form .input__family:-ms-input-placeholder {
+.form .input__family:-ms-input-placeholder {
   font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -993,7 +1093,7 @@
   color: #BDBDBD;
 }
 
-.reviews .form .input__family::-ms-input-placeholder {
+.form .input__family::-ms-input-placeholder {
   font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -1002,7 +1102,7 @@
   color: #BDBDBD;
 }
 
-.reviews .form .input__family::placeholder {
+.form .input__family::placeholder {
   font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -1011,12 +1111,12 @@
   color: #BDBDBD;
 }
 
-.reviews .form__textarea-w {
+.form__textarea-w {
   max-width: 540px;
   width: 100%;
 }
 
-.reviews .form-textarea-name {
+.form-textarea-name {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   font-size: 16px;
@@ -1025,7 +1125,7 @@
   margin-bottom: 15px;
 }
 
-.reviews .form__textarea {
+.form__textarea {
   max-width: 540px;
   width: 100%;
   height: 136px;
@@ -1038,7 +1138,7 @@
   margin-bottom: 50px;
 }
 
-.reviews .form__textarea::-webkit-input-placeholder {
+.form__textarea::-webkit-input-placeholder {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   font-size: 21px;
@@ -1046,7 +1146,7 @@
   color: #BDBDBD;
 }
 
-.reviews .form__textarea:-ms-input-placeholder {
+.form__textarea:-ms-input-placeholder {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   font-size: 21px;
@@ -1054,7 +1154,7 @@
   color: #BDBDBD;
 }
 
-.reviews .form__textarea::-ms-input-placeholder {
+.form__textarea::-ms-input-placeholder {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   font-size: 21px;
@@ -1062,7 +1162,7 @@
   color: #BDBDBD;
 }
 
-.reviews .form__textarea::placeholder {
+.form__textarea::placeholder {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   font-size: 21px;
@@ -1070,7 +1170,7 @@
   color: #BDBDBD;
 }
 
-.reviews .form__button-w {
+.form__button-w {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1080,16 +1180,16 @@
           justify-content: end;
 }
 
-.reviews .form__button {
+.form__button {
   border: none;
   cursor: pointer;
 }
 
-.reviews .footer {
+.footer {
   width: 100%;
 }
 
-.reviews .footer__inner {
+.footer__inner {
   max-width: 1110px;
   width: 100%;
   height: 120px;

@@ -20,3 +20,14 @@ $(document).ready(function() {
     });
 
 });
+$(document).ready(function() {
+    $('.reviews-slider').slick({
+        arrows: true,
+        dots: true,
+        speed: 1000,
+        autoplay: true,
+        autoplaySpeed: 3000,
+
+    });
+
+});
